@@ -1,0 +1,3 @@
+JMH S 27 main.CollectionBenchmarkJMH S 63 main.jmh_generated.CollectionBenchmarkJMH_addLinkedList_jmhTest S 13 addLinkedList S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 27 main.CollectionBenchmarkJMH S 63 main.jmh_generated.CollectionBenchmarkJMH_getLinkedList_jmhTest S 13 getLinkedList S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 
+JMH S 27 main.CollectionBenchmarkJMH S 72 main.jmh_generated.CollectionBenchmarkJMH_removeMiddleLinkedList_jmhTest S 22 removeMiddleLinkedList S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MILLISECONDS E E 

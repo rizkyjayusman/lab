@@ -1,0 +1,9 @@
+dontinline,*.*_all_jmhStub
+dontinline,*.*_avgt_jmhStub
+dontinline,*.*_sample_jmhStub
+dontinline,*.*_ss_jmhStub
+dontinline,*.*_thrpt_jmhStub
+inline,main/CollectionBenchmarkJMH.addLinkedList
+inline,main/CollectionBenchmarkJMH.getLinkedList
+inline,main/CollectionBenchmarkJMH.removeMiddleLinkedList
+inline,main/CollectionBenchmarkJMH.setup
