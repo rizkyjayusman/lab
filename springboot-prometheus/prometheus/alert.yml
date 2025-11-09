@@ -1,0 +1,11 @@
+groups:
+  - name: Spring-boot
+    rules:
+    - alert: 5xx-over-2%
+      expr: sum(rate(orders_5xx_total [1m])) / sum(rate({__name__=~"orders_*.xx_total"}[1m])) * 100 > 1
+      for: 15s
+      labels:
+        severity: critical
+        techteam: rizkyj
+      annotations:
+        summary: '{{ $labels }}  {{ $value }} % breach'
