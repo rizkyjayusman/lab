@@ -1,0 +1,1 @@
+SELECT a.machine_id, ROUND((SUM(IF(activity_type = 'end', timestamp, 0)) - SUM(IF(activity_type = 'start', timestamp, 0))) / COUNT(DISTINCT(process_id)), 3) as processing_time FROM Activity a GROUP BY a.machine_id ;

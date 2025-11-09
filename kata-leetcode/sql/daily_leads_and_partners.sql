@@ -1,0 +1,1 @@
+SELECT d.date_id, make_name, COUNT(DISTINCT lead_id) as unique_leads, COUNT(DISTINCT partner_id) as unique_partners FROM DailySales d GROUP BY d.date_id, d.make_name ORDER BY d.date_id;
