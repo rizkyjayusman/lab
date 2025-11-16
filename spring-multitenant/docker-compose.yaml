@@ -1,0 +1,42 @@
+services:
+#  multischema-router-api:
+#    ports:
+#      - "8080:8080"
+#    environment:
+#      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/multischema_db
+#      - SPRING_DATASOURCE_USERNAME=multischemauser
+#      - SPRING_DATASOURCE_PASSWORD=multischemapass
+#      - SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.postgresql.Driver
+#    depends_on:
+#      postgres:
+#        condition: service_healthy
+#    restart: unless-stopped
+#    networks:
+#      - multischema_network
+
+  postgres:
+    image: postgres:15
+    container_name: multischema_db
+    environment:
+      POSTGRES_USER: multischemauser
+      POSTGRES_PASSWORD: multischemapass
+      POSTGRES_DB: multischemadb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB -h 127.0.0.1"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+    networks:
+      - multischema_network
+
+networks:
+  multischema_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
