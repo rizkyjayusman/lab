@@ -20,5 +20,4 @@ spring:
   flyway:
     enabled: false
     migration-path: db/migration
-    reserved-schemas:
-      - public
+    reserved-schemas: public

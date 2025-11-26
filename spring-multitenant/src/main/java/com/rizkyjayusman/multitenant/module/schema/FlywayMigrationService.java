@@ -5,15 +5,13 @@ import org.flywaydb.core.Flyway;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
 @RequiredArgsConstructor
 public class FlywayMigrationService {
 
     private final SchemaConfig schemaConfig;
 
-    @Value("${spring.flyway.migration-path:db/migration}")
+    @Value("${spring.flyway.migration-path}")
     private String migrationPath;
 
     public void migrate(String schemaName) {
@@ -35,6 +33,6 @@ public class FlywayMigrationService {
     }
 
     private String getTenantSchemaUrl(String tenantUrl) {
-        return schemaConfig.getBaseUrl().replace(SchemaMigrationConstant.CURRENT_SCHEMA_PUBLIC, SchemaMigrationConstant.CURRENT_SCHEMA_PATH + tenantUrl);
+        return schemaConfig.getBaseUrl().replace(SchemaMigrationConstant.CURRENT_SCHEMA, SchemaMigrationConstant.CURRENT_SCHEMA_PATH + tenantUrl);
     }
 }

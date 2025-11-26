@@ -31,12 +31,6 @@ public class SchemaMigrationPolicy {
     }
 
     private boolean isReservedSchemaUrl(String tenantUrl) {
-        for (String reservedSchema : reservedSchemas) {
-            if (tenantUrl.startsWith(SchemaMigrationConstant.CURRENT_SCHEMA_PATH + reservedSchema)) {
-                return true;
-            }
-        }
-
-        return false;
+        return reservedSchemas.stream().map(e -> SchemaMigrationConstant.CURRENT_SCHEMA_PATH + e).anyMatch(tenantUrl::startsWith);
     }
 }
