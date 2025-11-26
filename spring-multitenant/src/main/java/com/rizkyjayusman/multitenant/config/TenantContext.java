@@ -3,7 +3,7 @@ package com.rizkyjayusman.multitenant.config;
 public class TenantContext {
 
     private static ThreadLocal<String> currentTenant = new InheritableThreadLocal<>();
-    public static final String DEFAULT_TENANT_ID = "default_tenant";
+    public static final String DEFAULT_TENANT_ID = "public";
 
     public static String getCurrentTenant() {
         return currentTenant.get();
