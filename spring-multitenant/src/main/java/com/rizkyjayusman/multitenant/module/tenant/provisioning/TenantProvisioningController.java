@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class TenantProvisioningController {
 
-    private final TenantProvisioningService tenantProvisioningService;
+    private final OnboardNewTenantUseCase onboardNewTenantUseCase;
 
     @GetMapping("/tenants/{tenant_code}/migrations")
     public ResponseEntity<Void> migrate(@PathVariable("tenant_code") String tenantCode) {
-        tenantProvisioningService.migrate(tenantCode);
+        onboardNewTenantUseCase.migrate(tenantCode);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }
