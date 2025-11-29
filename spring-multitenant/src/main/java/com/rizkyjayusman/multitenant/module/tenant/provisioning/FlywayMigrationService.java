@@ -1,4 +1,4 @@
-package com.rizkyjayusman.multitenant.module.schema;
+package com.rizkyjayusman.multitenant.module.tenant.provisioning;
 
 import lombok.RequiredArgsConstructor;
 import org.flywaydb.core.Flyway;
@@ -33,6 +33,6 @@ public class FlywayMigrationService {
     }
 
     private String getTenantSchemaUrl(String tenantUrl) {
-        return schemaConfig.getBaseUrl().replace(SchemaMigrationConstant.CURRENT_SCHEMA, SchemaMigrationConstant.CURRENT_SCHEMA_PATH + tenantUrl);
+        return schemaConfig.getBaseUrl().replace(TenantProvisioningConstant.CURRENT_SCHEMA, TenantProvisioningConstant.CURRENT_SCHEMA_PATH + tenantUrl);
     }
 }

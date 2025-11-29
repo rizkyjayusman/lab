@@ -1,4 +1,4 @@
-package com.rizkyjayusman.multitenant.module.schema;
+package com.rizkyjayusman.multitenant.module.tenant.provisioning;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-public class SchemaMigrationController {
+public class TenantProvisioningController {
 
-    private final SchemaMigrationService schemaMigrationService;
+    private final TenantProvisioningService tenantProvisioningService;
 
     @GetMapping("/tenants/{tenant_code}/migrations")
     public ResponseEntity<Void> migrate(@PathVariable("tenant_code") String tenantCode) {
-        schemaMigrationService.migrate(tenantCode);
+        tenantProvisioningService.migrate(tenantCode);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

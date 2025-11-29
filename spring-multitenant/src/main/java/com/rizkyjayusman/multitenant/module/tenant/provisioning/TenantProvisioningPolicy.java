@@ -1,4 +1,4 @@
-package com.rizkyjayusman.multitenant.module.schema;
+package com.rizkyjayusman.multitenant.module.tenant.provisioning;
 
 import io.micrometer.common.util.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class SchemaMigrationPolicy {
+public class TenantProvisioningPolicy {
 
     @Value("${spring.flyway.reserved-schemas}")
     private List<String> reservedSchemas;
@@ -31,6 +31,6 @@ public class SchemaMigrationPolicy {
     }
 
     private boolean isReservedSchemaUrl(String tenantUrl) {
-        return reservedSchemas.stream().map(e -> SchemaMigrationConstant.CURRENT_SCHEMA_PATH + e).anyMatch(tenantUrl::startsWith);
+        return reservedSchemas.stream().map(e -> TenantProvisioningConstant.CURRENT_SCHEMA_PATH + e).anyMatch(tenantUrl::startsWith);
     }
 }

@@ -1,4 +1,4 @@
-package com.rizkyjayusman.multitenant.module.schema;
+package com.rizkyjayusman.multitenant.module.tenant.provisioning;
 
 import lombok.Getter;
 import lombok.Setter;

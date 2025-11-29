@@ -1,4 +1,4 @@
-package com.rizkyjayusman.multitenant.module.schema;
+package com.rizkyjayusman.multitenant.module.tenant.provisioning;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -6,18 +6,18 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class SchemaMigrationService {
+public class TenantProvisioningService {
 
     private final JdbcTemplate jdbcTemplate;
-    private final SchemaMigrationPolicy schemaMigrationPolicy;
+    private final TenantProvisioningPolicy tenantProvisioningPolicy;
     private final FlywayMigrationService flywayMigrationService;
 
     public void migrate(String tenantCode) {
-        schemaMigrationPolicy.validateTenantCode(tenantCode);
+        tenantProvisioningPolicy.validateTenantCode(tenantCode);
 
         String schemaName = getTenantSchemaName(tenantCode);
-        schemaMigrationPolicy.validateSchemaName(schemaName);
-        schemaMigrationPolicy.validateTenantSchemaUrl(schemaName);
+        tenantProvisioningPolicy.validateSchemaName(schemaName);
+        tenantProvisioningPolicy.validateTenantSchemaUrl(schemaName);
 
         createNewSchema(schemaName);
         flywayMigrationService.migrate(schemaName);
