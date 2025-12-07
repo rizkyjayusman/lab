@@ -1,8 +1,0 @@
-spring:
-  application:
-    name: order-service
-  datasource:
-    url: jdbc:postgresql://localhost:5432/doctic_db
-    username: doctic_admin
-    password: d0ct1c2025
-    driver-class-name: org.postgresql.Driver

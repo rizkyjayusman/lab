@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.rizkyjayusman</groupId>
-	<artifactId>order-service</artifactId>
+	<artifactId>user-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>order-service</name>
-	<description>Microservice for Mini Commerce project</description>
+	<name>user-service</name>
+	<description>User Service for Mini Commerce Microservice project</description>
 	<url/>
 	<licenses>
 		<license/>
