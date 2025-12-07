@@ -5,10 +5,14 @@ spring:
   application:
     name: order-service
   datasource:
-    url: jdbc:postgresql://postgres:5432/minicommerce
-    username: postgres
-    password: postgres
+    url: jdbc:postgresql://localhost:5433/minicommerce
+    username: miniuser
+    password: minipass
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+jwt:
+  secret: jwt123
+  expiration: 3600

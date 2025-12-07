@@ -1,14 +1,18 @@
 server:
-  port: 8081
+  port: 8080
 
 spring:
   application:
     name: order-service
   datasource:
-    url: jdbc:postgresql://postgres:5432/orderdb
-    username: postgres
-    password: postgres
+    url: jdbc:postgresql://localhost:5433/minicommerce
+    username: miniuser
+    password: minipass
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+internal-services:
+  product-service:
+    base-url: http://localhost:8081
