@@ -8,16 +8,16 @@ spring:
     gateway:
       routes:
         - id: order-service
-          uri: http://localhost:8080
+          uri: ${INTERNAL_SERVICES_ORDER_SERVICE_URL:http://localhost:8080}
           predicates:
             - Path=/api/v1/orders/**
           filters:
             - JwtAuthFilter
 
         - id: user-service
-          uri: http://localhost:8082
+          uri: ${INTERNAL_SERVICES_USER_SERVICE_URL:http://localhost:8082}
           predicates:
             - Path=/api/v1/users/login
 
 jwt:
-  secret: 7b7b1253ee80e3ac9aea2f859f3796129e5a50cbaac52b128a82f6e80d8f129b
+  secret: ${JWT_SECRET:7b7b1253ee80e3ac9aea2f859f3796129e5a50cbaac52b128a82f6e80d8f129b}

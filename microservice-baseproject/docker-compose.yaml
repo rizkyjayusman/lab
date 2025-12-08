@@ -27,6 +27,19 @@ services:
     networks:
       - ms-net
 
+  gateway-service:
+    build: ./gateway-service
+    environment:
+      INTERNAL_SERVICES_ORDER_SERVICE_URL: http://order-service:8080
+      INTERNAL_SERVICES_USER_SERVICE_URL: http://user-service:8080
+      JWT_SECRET: 7b7b1253ee80e3ac9aea2f859f3796129e5a50cbaac52b128a82f6e80d8f129b
+    ports:
+      - "8080"
+    depends_on:
+      - postgres
+    networks:
+      - ms-net
+
   order-service:
     build: ./order-service
     environment:
@@ -36,7 +49,7 @@ services:
       INTERNAL_SERVICES_PRODUCT_SERVICE_URL: http://product-service:8080
       INTERNAL_SERVICES_USER_SERVICE_URL: http://user-service:8080
     ports:
-      - "8082:8080"
+      - "8080"
     depends_on:
       - postgres
       - product-service

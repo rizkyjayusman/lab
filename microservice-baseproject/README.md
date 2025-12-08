@@ -89,9 +89,10 @@ Sistem terdiri dari **3 microservices**:
     * Postgres in container with volume persistence
     * Exposed ports for local dev:
 
-        * user: 8080
+        * gateway: 8090
+        * user: 8081
         * product: 8082
-        * order: 8081
+        * order: 8080
 * **Environment Variables** for:
 
     * DB URL, username, password
@@ -115,5 +116,4 @@ Sistem terdiri dari **3 microservices**:
 * Separate DB per service for true microservice separation
 * Async messaging (Kafka/RabbitMQ) for order events
 * Caching (Redis) for product data
-* Load balancer / API gateway
 * Rate limiting & monitoring
