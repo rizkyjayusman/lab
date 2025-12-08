@@ -2,7 +2,7 @@
 
 ## 1. High-Level Overview
 
-![High Level Architecture](/docs/mini-commerce-architecture.png)
+![High Level Architecture](docs/mini-commerce-architecture.png)
 
 Sistem terdiri dari **3 microservices**:
 
@@ -12,7 +12,7 @@ Sistem terdiri dari **3 microservices**:
 
 **Database:**
 
-![DB Diagram](/docs/mini-commerce-db-diagram.png)
+![DB Diagram](docs/mini-commerce-db-diagram.png)
 
 * 1 PostgreSQL instance shared (initially)
 * Tables: `users`, `products`, `orders`, `order_items`
@@ -81,7 +81,7 @@ Sistem terdiri dari **3 microservices**:
 
 ## 4. Deployment & Runtime
 
-![DB Diagram](/docs/mini-commerce-deployment-diagram.png)
+![DB Diagram](docs/mini-commerce-deployment-diagram.png)
 
 * **Docker Compose**:
 
