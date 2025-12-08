@@ -3,6 +3,8 @@ package com.rizkyjayusman.order.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
+
 @Entity
 @Table(name = "order_items")
 @Getter @Setter
@@ -17,7 +19,7 @@ public class OrderItem {
 
     private Integer quantity;
 
-    private Integer priceAtOrder;
+    private BigDecimal price;
 
     @ManyToOne
     @JoinColumn(name = "order_id")

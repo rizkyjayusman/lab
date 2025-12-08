@@ -2,6 +2,8 @@ package com.rizkyjayusman.product.service;
 
 import com.rizkyjayusman.product.dto.CheckStockRequest;
 import com.rizkyjayusman.product.dto.CheckStockResponse;
+import com.rizkyjayusman.product.dto.CreateProductRequest;
+import com.rizkyjayusman.product.dto.ProductResponse;
 import com.rizkyjayusman.product.entity.Product;
 import com.rizkyjayusman.product.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
@@ -21,6 +23,18 @@ public class ProductService {
         return productRepository.findAll();
     }
 
+    public ProductResponse createProduct(CreateProductRequest request) {
+        var product = Product.builder()
+                .name(request.getName())
+                .stock(request.getStock())
+                .price(request.getPrice())
+                .build();
+
+        var saved = productRepository.save(product);
+
+        return mapToResponse(saved);
+    }
+
     public Optional<Product> getProduct(Long id) {
         return productRepository.findById(id);
     }
@@ -29,7 +43,7 @@ public class ProductService {
     public CheckStockResponse checkStock(CheckStockRequest request) {
         List<Long> ids = request.getItems().stream()
                 .map(CheckStockRequest.Item::getProductId)
-                .collect(Collectors.toList());
+                .toList();
 
         List<Product> products = productRepository.findByIdIn(ids);
         Map<Long, Product> map = products.stream().collect(Collectors.toMap(Product::getId, p -> p));
@@ -58,7 +72,7 @@ public class ProductService {
     public void decreaseStock(CheckStockRequest request) {
         List<Long> ids = request.getItems().stream()
                 .map(CheckStockRequest.Item::getProductId)
-                .collect(Collectors.toList());
+                .toList();
 
         List<Product> products = productRepository.findByIdIn(ids);
         Map<Long, Product> map = products.stream().collect(Collectors.toMap(Product::getId, p -> p));
@@ -71,5 +85,14 @@ public class ProductService {
         }
 
         productRepository.saveAll(products);
+    }
+
+    private ProductResponse mapToResponse(Product product) {
+        return ProductResponse.builder()
+                .id(product.getId())
+                .name(product.getName())
+                .stock(product.getStock())
+                .price(product.getPrice())
+                .build();
     }
 }

@@ -4,7 +4,9 @@ import com.rizkyjayusman.order.enumeration.OrderStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
 import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
@@ -22,7 +24,9 @@ public class Order {
     @Enumerated
     private OrderStatus status;
 
-    private Instant createdAt;
+    private BigDecimal totalAmount;
+
+    private LocalDateTime createdAt;
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderItem> items;

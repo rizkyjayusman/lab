@@ -16,3 +16,5 @@ spring:
 internal-services:
   product-service:
     base-url: http://localhost:8081
+  user-service:
+    base-url: http://localhost:8082

@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8082
 
 spring:
   application:
@@ -14,5 +14,5 @@ spring:
     show-sql: true
 
 jwt:
-  secret: jwt123
-  expiration: 3600
+  secret: 7b7b1253ee80e3ac9aea2f859f3796129e5a50cbaac52b128a82f6e80d8f129b
+  expiration: 24

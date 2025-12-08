@@ -2,6 +2,8 @@ package com.rizkyjayusman.product.controller;
 
 import com.rizkyjayusman.product.dto.CheckStockRequest;
 import com.rizkyjayusman.product.dto.CheckStockResponse;
+import com.rizkyjayusman.product.dto.CreateProductRequest;
+import com.rizkyjayusman.product.dto.ProductResponse;
 import com.rizkyjayusman.product.entity.Product;
 import com.rizkyjayusman.product.service.ProductService;
 import lombok.RequiredArgsConstructor;
@@ -19,6 +21,11 @@ public class ProductController {
     @GetMapping
     public List<Product> getAll() {
         return productService.getAllProducts();
+    }
+
+    @PostMapping
+    public ProductResponse createProduct(@RequestBody CreateProductRequest request) {
+        return productService.createProduct(request);
     }
 
     @GetMapping("/{id}")

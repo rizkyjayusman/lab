@@ -24,7 +24,6 @@ public class UserController {
         return userService.login(request);
     }
 
-    // Internal endpoint for order-service validation
     @GetMapping("/{userId}/validate")
     public boolean validateUser(@PathVariable Long userId) {
         return userService.validateUser(userId);

@@ -7,7 +7,6 @@ import java.util.List;
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor
 public class CreateOrderRequest {
-    private Long userId;
     private List<Item> items;
 
     @Getter @Setter
