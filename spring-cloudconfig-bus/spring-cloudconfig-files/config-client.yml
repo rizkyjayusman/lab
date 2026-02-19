@@ -1,2 +1,2 @@
 hello:
-  world: "hello-world-from-config-client-but-changed-part-4"
+  world: "hello-world-from-config-client-but-changed-via-bus`"
