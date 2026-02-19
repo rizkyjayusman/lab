@@ -5,28 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fb27ab0-6502-49ef-8b47-5778074133c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../go-echo-baseproject/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../go-echo-baseproject/cmd/server/main_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../go-echo-baseproject/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../go-echo-baseproject/internal/hello/handler/hello.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../go-echo-baseproject/internal/routes.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../go-echo-baseproject/internal/user/handler/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../go-echo-baseproject/internal/user/model/user_model.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../go-echo-baseproject/internal/user/repo/user_repository.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../go-echo-baseproject/internal/user/service/user_service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../go-echo-baseproject/pkg/database/db.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../go-tasktracker-cli/cmd/cmd.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../go-tasktracker-cli/component/task.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../go-tasktracker-cli/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-streamapi/StreamApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-word-frequency-analyzer/src/main/java/com/rizkyjayusman/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-word-frequency-analyzer/src/main/java/com/rizkyjayusman/TextNormalizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-word-frequency-analyzer/src/main/java/com/rizkyjayusman/Tokenizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-ratelimiting/src/main/java/com/rizkyjayusman/rate_limiting/configs/Bucket4jConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-ratelimiting/src/main/java/com/rizkyjayusman/rate_limiting/configs/Bucket4jConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-ratelimiting/src/main/java/com/rizkyjayusman/rate_limiting/configs/RateLimit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-ratelimiting/src/main/java/com/rizkyjayusman/rate_limiting/configs/RateLimit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-ratelimiting/src/main/java/com/rizkyjayusman/rate_limiting/configs/RateLimitInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-ratelimiting/src/main/java/com/rizkyjayusman/rate_limiting/configs/RateLimitInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-ratelimiting/src/main/java/com/rizkyjayusman/rate_limiting/configs/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-ratelimiting/src/main/java/com/rizkyjayusman/rate_limiting/configs/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-ratelimiting/src/main/java/com/rizkyjayusman/rate_limiting/controllers/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-ratelimiting/src/main/java/com/rizkyjayusman/rate_limiting/controllers/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rizkyjayusman/config_server/ConfigServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rizkyjayusman/config_server/ConfigServerApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,50 +22,55 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="39s56AoFjCfBiyyztJLWtJ8HgIc" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.config-server [clean].executor": "Run",
-    "Maven.config-server [compile].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "feature/kafka-ksqldb",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/rizkyj/Documents/plygrd/lab/spring-cloudconfig",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.config-server [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.config-server [compile].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rizkyj/Documents/plygrd/lab/spring-cloudconfig&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="config-server" />
@@ -108,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1771471759802</updated>
-      <workItem from="1771471761028" duration="1116000" />
+      <workItem from="1771471761028" duration="2573000" />
     </task>
     <servers />
   </component>
