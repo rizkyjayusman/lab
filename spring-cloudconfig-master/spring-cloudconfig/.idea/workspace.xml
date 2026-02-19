@@ -4,18 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fb27ab0-6502-49ef-8b47-5778074133c2" name="Changes" comment="" />
+    <list default="true" id="9fb27ab0-6502-49ef-8b47-5778074133c2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../spring-cloudconfig-client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloudconfig-client/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloudconfig-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloudconfig-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloudconfig-client/src/main/java/com/rizkyjayusman/config_client/ConfigPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloudconfig-client/src/main/java/com/rizkyjayusman/config_client/ConfigPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloudconfig-client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloudconfig-client/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloudconfig-client/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloudconfig-client/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloudconfig-client/target/classes/com/rizkyjayusman/config_client/ConfigClientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloudconfig-client/target/classes/com/rizkyjayusman/config_client/ConfigClientApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloudconfig-client/target/classes/com/rizkyjayusman/config_client/ConfigPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloudconfig-client/target/classes/com/rizkyjayusman/config_client/ConfigPrinter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="7" />
+    <option name="cachedIndexableFilesCount" value="14" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -48,12 +57,13 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Debug&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/rizkyj/Documents/plygrd/lab/spring-cloudconfig&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rizkyj/Documents/plygrd/lab/spring-cloudconfig-master/spring-cloudconfig&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -91,6 +101,8 @@
       <option name="presentableId" value="Default" />
       <updated>1771471759802</updated>
       <workItem from="1771471761028" duration="4162000" />
+      <workItem from="1771476209552" duration="1015000" />
+      <workItem from="1771477452352" duration="1467000" />
     </task>
     <servers />
   </component>
